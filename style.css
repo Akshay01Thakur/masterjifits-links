@@ -1,0 +1,23 @@
+:root { --ink: #1d1b19; --muted: #6b645c; --paper: #fbf8f3; --line: #e6dfd4; --accent: #7a3b2e; --banner: #f3e6c9; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #f1ece4; --muted: #b3aa9e; --paper: #171513; --line: #2e2a26; --accent: #e3a08f; --banner: #3a3122; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--paper); }
+.banner { position: sticky; top: 0; z-index: 1; padding: 10px 16px; background: var(--banner); text-align: center; font-size: 14px; }
+main { max-width: 720px; margin: 0 auto; padding: 16px; }
+h1 { font-size: 26px; margin: 12px 0; }
+h2 { font-size: 18px; margin: 24px 0 8px; }
+.lede, .back { color: var(--muted); }
+a { color: var(--accent); }
+.id { display: inline-block; font-weight: 700; margin-right: 6px; }
+.grid { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
+.card { display: block; text-decoration: none; color: var(--ink); }
+.card img, .hero { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); background: var(--line); }
+.card .title { display: block; font-size: 14px; color: var(--muted); }
+.products { list-style: none; padding: 0; margin: 0; }
+.products li { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.who { grid-column: 1; font-size: 13px; color: var(--muted); text-transform: capitalize; }
+.name { grid-column: 1; }
+.shop { grid-column: 2; grid-row: 1 / span 2; align-self: center; padding: 8px 14px; border-radius: 999px; background: var(--accent); color: var(--paper); text-decoration: none; font-weight: 600; font-size: 14px; white-space: nowrap; }
+footer { max-width: 720px; margin: 24px auto; padding: 0 16px 32px; font-size: 13px; color: var(--muted); }
