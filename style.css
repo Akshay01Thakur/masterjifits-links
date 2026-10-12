@@ -21,3 +21,8 @@ a { color: var(--accent); }
 .name { grid-column: 1; }
 .shop { grid-column: 2; grid-row: 1 / span 2; align-self: center; padding: 8px 14px; border-radius: 999px; background: var(--accent); color: var(--paper); text-decoration: none; font-weight: 600; font-size: 14px; white-space: nowrap; }
 footer { max-width: 720px; margin: 24px auto; padding: 0 16px 32px; font-size: 13px; color: var(--muted); }
+.board { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); background: #fbf8f3; margin: 4px 0 8px; }
+.products li.has-thumb { grid-template-columns: 72px 1fr auto; }
+.products li.has-thumb .thumb { grid-column: 1; grid-row: 1 / span 2; width: 72px; height: 90px; object-fit: contain; background: #fbf8f3; border-radius: 6px; }
+.products li.has-thumb .who, .products li.has-thumb .name { grid-column: 2; }
+.products li.has-thumb .shop { grid-column: 3; }
